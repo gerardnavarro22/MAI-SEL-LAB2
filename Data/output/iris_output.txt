@@ -1,0 +1,5 @@
+############
+DATASET - IRIS
+############
+Training time: 1.74s
+Accuracy: 96.67%
