@@ -3,18 +3,17 @@ from joblib import Parallel, delayed
 
 
 class DecisionTree:
-    def __init__(self, f, max_depth=None):
+    def __init__(self, max_depth=None, features_subset=None):
         self.tree = None
         self.max_depth = max_depth
-        self.f = f
         self.feature_freq = None
+        self.features_subset = features_subset
 
     def fit(self, X, y):
         self.feature_freq = {}
         self.tree = self._grow_tree(X, y)
 
     def _grow_tree(self, X, y, depth=0):
-        n_features = X.shape[1]
         n_labels = len(np.unique(y))
 
         if n_labels == 1:
@@ -23,10 +22,7 @@ class DecisionTree:
         if depth == self.max_depth:
             return {'prediction': np.bincount(y).argmax()}
 
-        # Each tree uses a random subspace (selection) of
-        # features to split on at each node
-        subset_features = np.random.choice(n_features, self.f, replace=False)
-        best_feature, best_threshold = self._best_criteria(X, y, subset_features)
+        best_feature, best_threshold = self._best_criteria(X, y, self.features_subset)
         self.feature_freq[best_feature] = self.feature_freq.get(best_feature, 0) + 1
 
         left_indices = X[:, best_feature] < best_threshold
@@ -77,7 +73,7 @@ class DecisionTree:
             return self._predict_tree(x, tree['right'])
 
 
-class RandomForest:
+class DecisionForest:
     def __init__(self, nt=100, f=0, max_depth=None, n_jobs=-1):
         self.nt = nt
         self.max_depth = max_depth
@@ -87,12 +83,10 @@ class RandomForest:
         self.n_jobs = n_jobs
 
     def grow_tree(self, X, y):
-        tree = DecisionTree(max_depth=self.max_depth, f=self.f)
-        # The training set for each tree is
-        # sampled (bootstrapping) from the original dataset
-        bootstrap_indices = np.random.choice(len(X), len(X), replace=True)
-        bootstrap_X, bootstrap_y = X[bootstrap_indices], y[bootstrap_indices]
-        tree.fit(bootstrap_X, bootstrap_y)
+        # Each tree uses a random subspace (selection) of features
+        subset_features = np.random.choice(X.shape[1], self.f, replace=False)
+        tree = DecisionTree(max_depth=self.max_depth, features_subset=subset_features)
+        tree.fit(X, y)
         return tree
 
     def fit(self, X, y):
