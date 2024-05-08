@@ -2,7 +2,7 @@ import numpy as np
 from joblib import Parallel, delayed
 
 
-class DecisionTree:
+class CART:
     def __init__(self, max_depth=None, features_subset=None):
         self.tree = None
         self.max_depth = max_depth
@@ -20,6 +20,13 @@ class DecisionTree:
             return {'prediction': y[0]}
 
         if depth == self.max_depth:
+            return {'prediction': np.bincount(y).argmax()}
+
+        all_the_same = 0
+        for feature in self.features_subset:
+            if len(np.unique(X[:, feature])) == 1:
+                all_the_same += 1
+        if all_the_same == len(self.features_subset):
             return {'prediction': np.bincount(y).argmax()}
 
         best_feature, best_threshold = self._best_criteria(X, y, self.features_subset)
@@ -42,7 +49,9 @@ class DecisionTree:
 
         for feature_index in feature_indices:
             thresholds = np.unique(X[:, feature_index])
-            for threshold in thresholds:
+            sorted_thresholds = np.sort(thresholds)
+            midpoints = (sorted_thresholds[:-1] + sorted_thresholds[1:]) / 2
+            for threshold in midpoints:
                 left_indices = X[:, feature_index] < threshold
                 gini = self._gini_impurity(y[left_indices]) * np.sum(left_indices) / len(y) \
                        + self._gini_impurity(y[~left_indices]) * np.sum(~left_indices) / len(y)
@@ -85,7 +94,7 @@ class DecisionForest:
     def grow_tree(self, X, y):
         # Each tree uses a random subspace (selection) of features
         subset_features = np.random.choice(X.shape[1], self.f, replace=False)
-        tree = DecisionTree(max_depth=self.max_depth, features_subset=subset_features)
+        tree = CART(max_depth=self.max_depth, features_subset=subset_features)
         tree.fit(X, y)
         return tree
 
@@ -108,7 +117,7 @@ class DecisionForest:
                                            reverse=True)}
 
     def predict(self, X):
-        predictions = np.zeros((len(X), len(self.trees)))
+        predictions = np.zeros((len(X), len(self.trees)), dtype=int)
         for i, tree in enumerate(self.trees):
             predictions[:, i] = tree.predict(X)
-        return np.round(np.mean(predictions, axis=1)).astype(int)
+        return np.apply_along_axis(lambda x: np.bincount(x).argmax(), axis=1, arr=predictions)
