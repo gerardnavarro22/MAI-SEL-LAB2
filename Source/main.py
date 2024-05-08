@@ -147,18 +147,18 @@ if __name__ == "__main__":
 
     menu_txt = \
         """SINGLE EXECUTIONS:
-1. RANDOM FOREST - SMALL DATASET - IRIS
-2. DECISION FOREST - SMALL DATASET - IRIS
+1. RANDOM FOREST - SMALL DATASET - ECOLI
+2. DECISION FOREST - SMALL DATASET - ECOLI
 3. RANDOM FOREST - MEDIUM DATASET - WINE
 4. DECISION FOREST - MEDIUM DATASET - WINE
 5. RANDOM FOREST - BIG DATASET - SEGMENT
 6. DECISION FOREST - BIG DATASET - SEGMENT
 ------------------------
 FOREST INTERPRETERS:
-7. DECISION FOREST - SMALL DATASET - IRIS
+7. DECISION FOREST - SMALL DATASET - ECOLI
 8. DECISION FOREST - MEDIUM DATASET - WINE
 9. DECISION FOREST - BIG DATASET - SEGMENT
-10. RANDOM FOREST - SMALL DATASET - IRIS
+10. RANDOM FOREST - SMALL DATASET - ECOLI
 11. RANDOM FOREST - MEDIUM DATASET - WINE
 12. RANDOM FOREST - BIG DATASET - SEGMENT
 ------------------------
@@ -169,9 +169,9 @@ FOREST INTERPRETERS:
     option = int(input("Select option number: "))
 
     if option == 1:
-        process_dataset('iris', 'iris_train.csv', 'iris_test.csv', 'random-forest', n_jobs=1)
+        process_dataset('ecoli', 'ecoli_train.csv', 'ecoli_test.csv', 'random-forest', n_jobs=1)
     elif option == 2:
-        process_dataset('iris', 'iris_train.csv', 'iris_test.csv', 'decision-forest', n_jobs=1)
+        process_dataset('ecoli', 'ecoli_train.csv', 'ecoli_test.csv', 'decision-forest', n_jobs=1)
     elif option == 3:
         process_dataset('wine', 'wine_train.csv', 'wine_test.csv', 'random-forest')
     elif option == 4:
@@ -181,13 +181,13 @@ FOREST INTERPRETERS:
     elif option == 6:
         process_dataset('segment', 'segment_train.csv', 'segment_test.csv', 'decision-forest')
     elif option == 7:
-        forest_interpreter('iris', 'iris_train.csv', 'iris_test.csv', 'decision-forest', n_jobs=1)
+        forest_interpreter('ecoli', 'ecoli_train.csv', 'ecoli_test.csv', 'decision-forest', n_jobs=1)
     elif option == 8:
         forest_interpreter('wine', 'wine_train.csv', 'wine_test.csv', 'decision-forest')
     elif option == 9:
         forest_interpreter('segment', 'segment_train.csv', 'segment_test.csv', 'decision-forest')
     elif option == 10:
-        forest_interpreter('iris', 'iris_train.csv', 'iris_test.csv', 'random-forest', n_jobs=1)
+        forest_interpreter('ecoli', 'ecoli_train.csv', 'ecoli_test.csv', 'random-forest', n_jobs=1)
     elif option == 11:
         forest_interpreter('wine', 'wine_train.csv', 'wine_test.csv', 'random-forest')
     elif option == 12:
