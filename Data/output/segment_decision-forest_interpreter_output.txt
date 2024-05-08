@@ -1,0 +1,557 @@
+############
+DATASET - SEGMENT - DECISION-FOREST
+############
+
+############ nt=1 f=4  ############
+Training time: 1.36s
+Accuracy: 44.16%
+
+Feature importances:
+Feature         Frequency 
+vedge-mean      400.0     
+hedge-sd        319.0     
+hedge-mean      151.0     
+
+############ nt=1 f=9  ############
+Training time: 2.41s
+Accuracy: 93.07%
+
+Feature importances:
+Feature         Frequency 
+rawred-mean     34.0      
+region-centroid-row 26.0      
+exblue-mean     11.0      
+vedge-mean      11.0      
+hedge-mean      8.0       
+saturation-mean 6.0       
+hedge-sd        5.0       
+rawgreen-mean   2.0       
+rawblue-mean    2.0       
+
+############ nt=1 f=14  ############
+Training time: 4.52s
+Accuracy: 90.48%
+
+Feature importances:
+Feature         Frequency 
+vegde-sd        31.0      
+region-centroid-col 19.0      
+rawgreen-mean   17.0      
+hue-mean        14.0      
+exred-mean      13.0      
+hedge-sd        10.0      
+vedge-mean      8.0       
+hedge-mean      7.0       
+rawred-mean     5.0       
+exblue-mean     5.0       
+intensity-mean  4.0       
+short-line-density-2 1.0       
+short-line-density-5 1.0       
+
+############ nt=1 f=random  ############
+Training time: 1.03s
+Accuracy: 90.91%
+
+Feature importances:
+Feature         Frequency 
+value-mean      60.0      
+region-centroid-row 40.0      
+hedge-mean      28.0      
+intensity-mean  20.0      
+
+############ nt=10 f=4  ############
+Training time: 2.01s
+Accuracy: 94.16%
+
+Feature importances:
+Feature         Frequency 
+saturation-mean 47.0      
+vegde-sd        41.2      
+exgreen-mean    27.8      
+hue-mean        20.6      
+rawgreen-mean   15.1      
+value-mean      15.0      
+region-centroid-row 13.1      
+exblue-mean     12.6      
+exred-mean      12.3      
+rawred-mean     12.1      
+rawblue-mean    11.9      
+vedge-mean      11.0      
+hedge-sd        10.0      
+hedge-mean      7.7       
+short-line-density-5 4.5       
+region-centroid-col 2.0       
+
+############ nt=10 f=9  ############
+Training time: 3.94s
+Accuracy: 97.62%
+
+Feature importances:
+Feature         Frequency 
+region-centroid-row 16.5      
+rawblue-mean    9.8       
+hedge-sd        9.6       
+saturation-mean 9.4       
+region-centroid-col 8.1       
+hedge-mean      7.6       
+value-mean      6.9       
+exred-mean      6.5       
+rawred-mean     5.6       
+vedge-mean      5.1       
+hue-mean        4.5       
+rawgreen-mean   4.4       
+exblue-mean     3.8       
+intensity-mean  3.4       
+vegde-sd        2.8       
+exgreen-mean    1.5       
+short-line-density-5 0.6       
+
+############ nt=10 f=14  ############
+Training time: 5.29s
+Accuracy: 97.84%
+
+Feature importances:
+Feature         Frequency 
+region-centroid-col 8.7       
+region-centroid-row 8.3       
+saturation-mean 7.6       
+hue-mean        7.0       
+exgreen-mean    5.8       
+vedge-mean      5.6       
+rawgreen-mean   5.3       
+hedge-mean      4.4       
+rawred-mean     4.0       
+exred-mean      3.6       
+intensity-mean  3.5       
+value-mean      3.2       
+hedge-sd        2.3       
+rawblue-mean    1.9       
+vegde-sd        0.9       
+exblue-mean     0.5       
+short-line-density-2 0.4       
+short-line-density-5 0.2       
+
+############ nt=10 f=random  ############
+Training time: 4.35s
+Accuracy: 96.54%
+
+Feature importances:
+Feature         Frequency 
+rawgreen-mean   14.5      
+hedge-mean      13.8      
+region-centroid-col 10.4      
+hue-mean        9.8       
+exblue-mean     9.0       
+intensity-mean  9.0       
+exgreen-mean    7.9       
+exred-mean      7.9       
+rawred-mean     7.1       
+vedge-mean      6.3       
+region-centroid-row 5.8       
+saturation-mean 5.4       
+vegde-sd        3.8       
+value-mean      3.0       
+rawblue-mean    2.0       
+hedge-sd        1.7       
+short-line-density-5 1.3       
+short-line-density-2 0.2       
+
+############ nt=25 f=4  ############
+Training time: 4.08s
+Accuracy: 95.02%
+
+Feature importances:
+Feature         Frequency 
+vegde-sd        27.28     
+rawblue-mean    20.2      
+saturation-mean 20.08     
+rawgreen-mean   19.48     
+exblue-mean     19.36     
+hedge-mean      19.28     
+vedge-mean      18.72     
+hue-mean        18.6      
+region-centroid-col 17.08     
+value-mean      16.76     
+region-centroid-row 15.88     
+exgreen-mean    15.68     
+intensity-mean  13.08     
+exred-mean      11.48     
+rawred-mean     11.2      
+hedge-sd        5.4       
+short-line-density-5 2.44      
+short-line-density-2 1.4       
+
+############ nt=25 f=9  ############
+Training time: 8.45s
+Accuracy: 96.32%
+
+Feature importances:
+Feature         Frequency 
+exred-mean      11.24     
+vedge-mean      10.92     
+hedge-mean      9.4       
+rawred-mean     9.12      
+hue-mean        8.6       
+exblue-mean     8.48      
+region-centroid-row 8.0       
+value-mean      7.16      
+hedge-sd        6.92      
+intensity-mean  6.6       
+rawgreen-mean   6.36      
+saturation-mean 6.0       
+region-centroid-col 5.92      
+exgreen-mean    5.72      
+vegde-sd        4.6       
+rawblue-mean    3.84      
+short-line-density-5 0.64      
+short-line-density-2 0.4       
+
+############ nt=25 f=14  ############
+Training time: 11.95s
+Accuracy: 98.27%
+
+Feature importances:
+Feature         Frequency 
+region-centroid-row 8.76      
+hue-mean        8.36      
+region-centroid-col 8.36      
+exgreen-mean    7.76      
+saturation-mean 6.72      
+hedge-sd        6.6       
+rawred-mean     5.8       
+value-mean      5.04      
+vedge-mean      4.36      
+exred-mean      4.36      
+hedge-mean      4.04      
+rawblue-mean    3.76      
+rawgreen-mean   3.4       
+vegde-sd        2.72      
+exblue-mean     1.88      
+intensity-mean  1.72      
+short-line-density-5 0.36      
+short-line-density-2 0.32      
+
+############ nt=25 f=random  ############
+Training time: 7.30s
+Accuracy: 95.67%
+
+Feature importances:
+Feature         Frequency 
+exgreen-mean    42.2      
+vegde-sd        41.4      
+region-centroid-col 20.92     
+vedge-mean      20.8      
+hue-mean        19.24     
+rawred-mean     18.48     
+hedge-sd        15.92     
+region-centroid-row 8.32      
+exred-mean      6.8       
+hedge-mean      6.72      
+saturation-mean 6.72      
+intensity-mean  5.48      
+rawblue-mean    5.04      
+rawgreen-mean   4.64      
+exblue-mean     4.08      
+value-mean      1.28      
+short-line-density-2 0.92      
+short-line-density-5 0.76      
+
+############ nt=50 f=4  ############
+Training time: 7.97s
+Accuracy: 93.72%
+
+Feature importances:
+Feature         Frequency 
+region-centroid-col 31.72     
+hedge-mean      22.96     
+hedge-sd        22.52     
+rawblue-mean    22.38     
+rawred-mean     20.26     
+value-mean      19.38     
+vedge-mean      19.14     
+hue-mean        16.82     
+exgreen-mean    16.2      
+vegde-sd        15.68     
+exblue-mean     14.66     
+saturation-mean 11.44     
+exred-mean      10.22     
+intensity-mean  9.54      
+rawgreen-mean   9.0       
+region-centroid-row 5.52      
+short-line-density-5 2.62      
+short-line-density-2 0.6       
+
+############ nt=50 f=9  ############
+Training time: 15.04s
+Accuracy: 96.32%
+
+Feature importances:
+Feature         Frequency 
+hue-mean        12.76     
+region-centroid-col 11.2      
+saturation-mean 10.56     
+exred-mean      10.5      
+rawgreen-mean   8.02      
+vegde-sd        7.74      
+region-centroid-row 7.62      
+rawred-mean     7.4       
+exgreen-mean    7.34      
+hedge-sd        7.0       
+exblue-mean     6.32      
+vedge-mean      6.0       
+intensity-mean  5.58      
+rawblue-mean    5.4       
+hedge-mean      4.9       
+value-mean      3.04      
+short-line-density-5 1.2       
+short-line-density-2 0.4       
+
+############ nt=50 f=14  ############
+Training time: 22.23s
+Accuracy: 97.84%
+
+Feature importances:
+Feature         Frequency 
+hue-mean        13.8      
+region-centroid-col 9.68      
+exgreen-mean    7.48      
+saturation-mean 7.42      
+hedge-sd        7.3       
+region-centroid-row 6.82      
+rawred-mean     5.74      
+vedge-mean      5.56      
+vegde-sd        5.32      
+intensity-mean  4.72      
+rawgreen-mean   4.22      
+exred-mean      3.8       
+hedge-mean      3.68      
+exblue-mean     3.64      
+value-mean      3.14      
+rawblue-mean    2.48      
+short-line-density-5 0.66      
+short-line-density-2 0.32      
+
+############ nt=50 f=random  ############
+Training time: 14.89s
+Accuracy: 97.84%
+
+Feature importances:
+Feature         Frequency 
+saturation-mean 17.3      
+hedge-sd        16.88     
+region-centroid-row 12.94     
+rawblue-mean    12.46     
+exgreen-mean    11.2      
+hedge-mean      9.34      
+vedge-mean      9.22      
+exblue-mean     7.4       
+vegde-sd        6.7       
+region-centroid-col 6.42      
+exred-mean      6.3       
+value-mean      5.92      
+hue-mean        5.92      
+intensity-mean  5.64      
+rawred-mean     4.5       
+rawgreen-mean   3.8       
+short-line-density-5 3.5       
+short-line-density-2 0.54      
+
+############ nt=75 f=4  ############
+Training time: 12.84s
+Accuracy: 94.16%
+
+Feature importances:
+Feature         Frequency 
+vegde-sd        37.79     
+hedge-sd        23.73     
+value-mean      22.84     
+intensity-mean  22.45     
+exgreen-mean    22.39     
+vedge-mean      22.0      
+exred-mean      21.37     
+exblue-mean     19.48     
+rawgreen-mean   16.13     
+hedge-mean      15.53     
+saturation-mean 14.27     
+hue-mean        12.11     
+region-centroid-col 11.88     
+region-centroid-row 9.24      
+rawred-mean     8.77      
+rawblue-mean    8.04      
+short-line-density-5 3.75      
+short-line-density-2 1.61      
+
+############ nt=75 f=9  ############
+Training time: 25.84s
+Accuracy: 97.62%
+
+Feature importances:
+Feature         Frequency 
+hue-mean        12.04     
+region-centroid-row 9.67      
+region-centroid-col 8.41      
+exgreen-mean    7.91      
+saturation-mean 7.85      
+exred-mean      7.49      
+vedge-mean      6.96      
+value-mean      6.93      
+exblue-mean     6.89      
+hedge-sd        6.79      
+rawred-mean     6.76      
+hedge-mean      6.12      
+rawblue-mean    5.35      
+rawgreen-mean   5.04      
+intensity-mean  4.19      
+vegde-sd        4.07      
+short-line-density-5 0.59      
+short-line-density-2 0.31      
+
+############ nt=75 f=14  ############
+Training time: 34.78s
+Accuracy: 97.62%
+
+Feature importances:
+Feature         Frequency 
+hue-mean        10.27     
+region-centroid-row 9.21      
+region-centroid-col 8.61      
+vedge-mean      6.8       
+saturation-mean 6.8       
+exgreen-mean    5.87      
+hedge-sd        4.84      
+rawred-mean     4.53      
+hedge-mean      4.53      
+exblue-mean     4.23      
+vegde-sd        3.93      
+exred-mean      3.79      
+intensity-mean  3.68      
+value-mean      3.15      
+rawgreen-mean   2.37      
+rawblue-mean    1.57      
+short-line-density-5 0.59      
+short-line-density-2 0.27      
+
+############ nt=75 f=random  ############
+Training time: 26.61s
+Accuracy: 97.84%
+
+Feature importances:
+Feature         Frequency 
+intensity-mean  21.27     
+hue-mean        15.52     
+rawblue-mean    13.77     
+saturation-mean 9.75      
+value-mean      9.03      
+hedge-sd        8.57      
+region-centroid-col 8.37      
+region-centroid-row 7.59      
+exgreen-mean    6.6       
+exblue-mean     6.41      
+rawred-mean     6.05      
+rawgreen-mean   5.95      
+exred-mean      5.57      
+hedge-mean      5.16      
+vedge-mean      4.32      
+vegde-sd        4.15      
+short-line-density-5 0.73      
+short-line-density-2 0.56      
+
+############ nt=100 f=4  ############
+Training time: 17.12s
+Accuracy: 95.24%
+
+Feature importances:
+Feature         Frequency 
+vegde-sd        30.11     
+exred-mean      28.74     
+region-centroid-col 22.7      
+hedge-mean      22.48     
+hue-mean        22.08     
+hedge-sd        20.09     
+saturation-mean 18.81     
+rawgreen-mean   17.18     
+vedge-mean      16.65     
+value-mean      14.84     
+region-centroid-row 14.49     
+exblue-mean     14.45     
+exgreen-mean    13.52     
+rawblue-mean    13.11     
+intensity-mean  11.91     
+rawred-mean     10.24     
+short-line-density-5 3.15      
+short-line-density-2 1.23      
+
+############ nt=100 f=9  ############
+Training time: 32.19s
+Accuracy: 97.19%
+
+Feature importances:
+Feature         Frequency 
+hue-mean        12.09     
+region-centroid-row 10.1      
+region-centroid-col 8.76      
+saturation-mean 8.6       
+vedge-mean      7.49      
+hedge-mean      7.44      
+exgreen-mean    7.34      
+rawred-mean     7.33      
+rawgreen-mean   6.97      
+vegde-sd        6.69      
+exred-mean      6.65      
+hedge-sd        6.41      
+intensity-mean  5.2       
+exblue-mean     5.16      
+value-mean      5.14      
+rawblue-mean    4.69      
+short-line-density-5 0.67      
+short-line-density-2 0.61      
+
+############ nt=100 f=14  ############
+Training time: 45.60s
+Accuracy: 97.84%
+
+Feature importances:
+Feature         Frequency 
+hue-mean        9.98      
+region-centroid-col 8.8       
+region-centroid-row 8.71      
+saturation-mean 8.11      
+rawred-mean     7.06      
+vedge-mean      5.88      
+exgreen-mean    5.12      
+hedge-sd        5.01      
+hedge-mean      4.36      
+exred-mean      3.84      
+intensity-mean  3.82      
+vegde-sd        3.73      
+rawgreen-mean   3.65      
+rawblue-mean    3.59      
+exblue-mean     2.61      
+value-mean      2.25      
+short-line-density-5 0.52      
+short-line-density-2 0.25      
+
+############ nt=100 f=random  ############
+Training time: 32.07s
+Accuracy: 98.05%
+
+Feature importances:
+Feature         Frequency 
+vegde-sd        20.01     
+region-centroid-col 15.91     
+rawred-mean     15.77     
+rawblue-mean    15.35     
+vedge-mean      14.44     
+region-centroid-row 12.17     
+hedge-mean      11.34     
+hedge-sd        10.0      
+exgreen-mean    9.88      
+saturation-mean 9.54      
+value-mean      9.3       
+exred-mean      8.99      
+exblue-mean     8.39      
+hue-mean        7.94      
+rawgreen-mean   4.35      
+intensity-mean  3.65      
+short-line-density-5 1.64      
+short-line-density-2 0.49      

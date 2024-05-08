@@ -1,0 +1,299 @@
+############
+DATASET - ECOLI - DECISION-FOREST
+############
+
+############ nt=1 f=1  ############
+Training time: 0.00s
+Accuracy: 42.65%
+
+Feature importances:
+Feature         Frequency 
+lip             1.0       
+
+############ nt=1 f=3  ############
+Training time: 0.07s
+Accuracy: 42.65%
+
+Feature importances:
+Feature         Frequency 
+gvh             68.0      
+aac             61.0      
+
+############ nt=1 f=5  ############
+Training time: 0.11s
+Accuracy: 70.59%
+
+Feature importances:
+Feature         Frequency 
+aac             18.0      
+alm2            18.0      
+mcg             10.0      
+alm1            8.0       
+
+############ nt=1 f=random  ############
+Training time: 0.02s
+Accuracy: 47.06%
+
+Feature importances:
+Feature         Frequency 
+aac             48.0      
+
+############ nt=10 f=1  ############
+Training time: 0.14s
+Accuracy: 42.65%
+
+Feature importances:
+Feature         Frequency 
+mcg             12.4      
+alm1            11.6      
+alm2            6.5       
+gvh             4.8       
+aac             4.8       
+lip             0.1       
+
+############ nt=10 f=3  ############
+Training time: 0.62s
+Accuracy: 64.71%
+
+Feature importances:
+Feature         Frequency 
+aac             26.1      
+gvh             19.9      
+mcg             19.5      
+alm1            13.3      
+alm2            11.4      
+lip             0.8       
+
+############ nt=10 f=5  ############
+Training time: 1.05s
+Accuracy: 67.65%
+
+Feature importances:
+Feature         Frequency 
+aac             19.0      
+alm2            16.1      
+gvh             11.8      
+alm1            9.8       
+mcg             5.7       
+lip             1.7       
+
+############ nt=10 f=random  ############
+Training time: 0.72s
+Accuracy: 66.18%
+
+Feature importances:
+Feature         Frequency 
+gvh             21.8      
+alm1            14.9      
+alm2            8.3       
+aac             6.0       
+mcg             5.6       
+lip             1.5       
+
+############ nt=25 f=1  ############
+Training time: 0.41s
+Accuracy: 45.59%
+
+Feature importances:
+Feature         Frequency 
+gvh             13.44     
+mcg             9.92      
+aac             9.6       
+alm1            9.28      
+alm2            5.2       
+lip             0.12      
+
+############ nt=25 f=3  ############
+Training time: 1.90s
+Accuracy: 69.12%
+
+Feature importances:
+Feature         Frequency 
+alm1            20.92     
+mcg             20.76     
+gvh             16.88     
+alm2            11.92     
+aac             11.28     
+lip             0.84      
+
+############ nt=25 f=5  ############
+Training time: 2.74s
+Accuracy: 66.18%
+
+Feature importances:
+Feature         Frequency 
+gvh             14.12     
+aac             13.64     
+mcg             9.48      
+alm1            9.12      
+alm2            8.0       
+lip             1.72      
+
+############ nt=25 f=random  ############
+Training time: 1.37s
+Accuracy: 55.88%
+
+Feature importances:
+Feature         Frequency 
+gvh             8.36      
+mcg             8.28      
+aac             7.16      
+alm1            6.48      
+alm2            6.44      
+lip             1.08      
+
+############ nt=50 f=1  ############
+Training time: 0.71s
+Accuracy: 44.12%
+
+Feature importances:
+Feature         Frequency 
+alm2            11.7      
+alm1            8.12      
+aac             7.68      
+gvh             6.72      
+mcg             6.2       
+lip             0.18      
+
+############ nt=50 f=3  ############
+Training time: 3.05s
+Accuracy: 66.18%
+
+Feature importances:
+Feature         Frequency 
+aac             26.16     
+gvh             17.42     
+mcg             16.54     
+alm1            14.88     
+alm2            9.72      
+lip             1.8       
+
+############ nt=50 f=5  ############
+Training time: 5.66s
+Accuracy: 69.12%
+
+Feature importances:
+Feature         Frequency 
+mcg             14.04     
+gvh             13.78     
+aac             12.3      
+alm2            10.0      
+alm1            7.14      
+lip             1.78      
+
+############ nt=50 f=random  ############
+Training time: 3.68s
+Accuracy: 70.59%
+
+Feature importances:
+Feature         Frequency 
+alm2            15.46     
+gvh             11.44     
+alm1            10.38     
+mcg             9.9       
+aac             8.66      
+lip             1.4       
+
+############ nt=75 f=1  ############
+Training time: 1.15s
+Accuracy: 44.12%
+
+Feature importances:
+Feature         Frequency 
+alm2            9.53      
+mcg             9.09      
+alm1            8.51      
+gvh             8.32      
+aac             8.32      
+lip             0.11      
+
+############ nt=75 f=3  ############
+Training time: 5.24s
+Accuracy: 67.65%
+
+Feature importances:
+Feature         Frequency 
+mcg             20.65     
+gvh             19.21     
+aac             17.09     
+alm1            15.21     
+alm2            15.17     
+lip             1.12      
+
+############ nt=75 f=5  ############
+Training time: 8.07s
+Accuracy: 69.12%
+
+Feature importances:
+Feature         Frequency 
+aac             14.67     
+gvh             11.85     
+alm1            11.84     
+alm2            9.56      
+mcg             8.77      
+lip             1.85      
+
+############ nt=75 f=random  ############
+Training time: 4.60s
+Accuracy: 69.12%
+
+Feature importances:
+Feature         Frequency 
+gvh             11.37     
+mcg             10.52     
+alm1            9.89      
+aac             9.17      
+alm2            7.85      
+lip             0.87      
+
+############ nt=100 f=1  ############
+Training time: 1.47s
+Accuracy: 42.65%
+
+Feature importances:
+Feature         Frequency 
+alm2            11.05     
+alm1            9.86      
+gvh             9.12      
+mcg             6.2       
+aac             5.28      
+lip             0.15      
+
+############ nt=100 f=3  ############
+Training time: 6.89s
+Accuracy: 69.12%
+
+Feature importances:
+Feature         Frequency 
+alm1            22.31     
+gvh             19.25     
+alm2            16.47     
+aac             13.2      
+mcg             11.36     
+lip             1.51      
+
+############ nt=100 f=5  ############
+Training time: 10.84s
+Accuracy: 70.59%
+
+Feature importances:
+Feature         Frequency 
+aac             13.76     
+gvh             12.25     
+alm2            11.73     
+mcg             10.75     
+alm1            10.47     
+lip             2.05      
+
+############ nt=100 f=random  ############
+Training time: 6.41s
+Accuracy: 70.59%
+
+Feature importances:
+Feature         Frequency 
+aac             11.15     
+alm2            11.04     
+gvh             9.99      
+alm1            9.48      
+mcg             8.9       
+lip             1.05      

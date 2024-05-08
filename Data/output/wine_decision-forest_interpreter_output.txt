@@ -1,0 +1,414 @@
+############
+DATASET - WINE - DECISION-FOREST
+############
+
+############ nt=1 f=2  ############
+Training time: 0.75s
+Accuracy: 55.31%
+
+Feature importances:
+Feature         Frequency 
+V7              317.0     
+V5              290.0     
+
+############ nt=1 f=5  ############
+Training time: 0.91s
+Accuracy: 60.62%
+
+Feature importances:
+Feature         Frequency 
+V1              169.0     
+V4              89.0      
+V7              68.0      
+V9              54.0      
+V10             53.0      
+
+############ nt=1 f=8  ############
+Training time: 1.41s
+Accuracy: 60.62%
+
+Feature importances:
+Feature         Frequency 
+V3              109.0     
+V4              60.0      
+V5              48.0      
+V6              39.0      
+V1              32.0      
+V8              31.0      
+V9              29.0      
+V10             19.0      
+
+############ nt=1 f=random  ############
+Training time: 1.63s
+Accuracy: 58.13%
+
+Feature importances:
+Feature         Frequency 
+V5              114.0     
+V7              62.0      
+V9              40.0      
+V2              39.0      
+V8              35.0      
+V6              29.0      
+V1              22.0      
+V4              22.0      
+
+############ nt=10 f=2  ############
+Training time: 0.61s
+Accuracy: 60.62%
+
+Feature importances:
+Feature         Frequency 
+V10             71.3      
+V5              66.6      
+V7              65.3      
+V9              65.1      
+V1              64.9      
+V6              57.6      
+V4              47.2      
+V8              42.5      
+V11             39.0      
+V3              35.9      
+V2              18.3      
+
+############ nt=10 f=5  ############
+Training time: 1.72s
+Accuracy: 63.12%
+
+Feature importances:
+Feature         Frequency 
+V8              57.1      
+V1              55.2      
+V7              46.8      
+V9              45.9      
+V2              41.5      
+V4              36.2      
+V5              34.6      
+V6              30.5      
+V10             26.2      
+V3              24.6      
+V11             23.3      
+
+############ nt=10 f=8  ############
+Training time: 2.23s
+Accuracy: 63.44%
+
+Feature importances:
+Feature         Frequency 
+V9              51.2      
+V3              42.4      
+V6              40.0      
+V2              37.4      
+V7              36.0      
+V11             30.9      
+V4              26.5      
+V1              24.6      
+V10             23.3      
+V5              22.8      
+V8              20.7      
+
+############ nt=10 f=random  ############
+Training time: 2.03s
+Accuracy: 65.62%
+
+Feature importances:
+Feature         Frequency 
+V3              76.8      
+V11             48.5      
+V1              44.6      
+V4              41.4      
+V6              33.5      
+V5              23.3      
+V2              22.6      
+V10             21.7      
+V9              21.7      
+V7              19.0      
+V8              10.0      
+
+############ nt=25 f=2  ############
+Training time: 1.05s
+Accuracy: 61.56%
+
+Feature importances:
+Feature         Frequency 
+V9              83.4      
+V8              83.12     
+V4              64.2      
+V3              55.44     
+V6              52.68     
+V11             46.36     
+V5              44.84     
+V2              41.12     
+V10             38.04     
+V1              37.4      
+V7              36.4      
+
+############ nt=25 f=5  ############
+Training time: 2.95s
+Accuracy: 63.75%
+
+Feature importances:
+Feature         Frequency 
+V2              56.64     
+V1              41.68     
+V8              40.48     
+V7              39.72     
+V5              39.32     
+V9              35.6      
+V6              33.88     
+V11             33.68     
+V10             31.6      
+V3              31.16     
+V4              29.16     
+
+############ nt=25 f=8  ############
+Training time: 4.93s
+Accuracy: 66.56%
+
+Feature importances:
+Feature         Frequency 
+V9              42.24     
+V5              40.32     
+V3              39.44     
+V7              37.04     
+V4              36.88     
+V8              34.4      
+V10             28.08     
+V6              27.84     
+V1              23.92     
+V11             23.36     
+V2              21.36     
+
+############ nt=25 f=random  ############
+Training time: 3.26s
+Accuracy: 65.31%
+
+Feature importances:
+Feature         Frequency 
+V9              50.4      
+V2              49.72     
+V7              45.68     
+V1              43.84     
+V4              39.44     
+V6              38.8      
+V5              33.24     
+V3              28.0      
+V11             26.72     
+V10             26.2      
+V8              18.16     
+
+############ nt=50 f=2  ############
+Training time: 2.04s
+Accuracy: 61.56%
+
+Feature importances:
+Feature         Frequency 
+V3              82.42     
+V9              76.06     
+V5              71.44     
+V2              69.36     
+V8              58.54     
+V10             58.04     
+V1              53.9      
+V7              36.26     
+V11             33.2      
+V4              31.6      
+V6              18.28     
+
+############ nt=50 f=5  ############
+Training time: 6.14s
+Accuracy: 67.19%
+
+Feature importances:
+Feature         Frequency 
+V2              46.72     
+V8              43.56     
+V3              42.26     
+V9              40.56     
+V1              40.06     
+V5              37.84     
+V4              37.38     
+V6              35.72     
+V7              35.44     
+V11             31.44     
+V10             26.12     
+
+############ nt=50 f=8  ############
+Training time: 10.32s
+Accuracy: 66.88%
+
+Feature importances:
+Feature         Frequency 
+V2              41.3      
+V5              35.62     
+V8              35.14     
+V7              34.84     
+V4              33.3      
+V3              32.74     
+V9              32.6      
+V10             30.2      
+V1              28.12     
+V6              25.92     
+V11             24.32     
+
+############ nt=50 f=random  ############
+Training time: 6.63s
+Accuracy: 67.50%
+
+Feature importances:
+Feature         Frequency 
+V1              48.96     
+V5              44.54     
+V3              40.76     
+V11             35.38     
+V2              34.5      
+V4              32.94     
+V10             31.9      
+V9              24.9      
+V7              24.3      
+V6              22.26     
+V8              18.62     
+
+############ nt=75 f=2  ############
+Training time: 2.77s
+Accuracy: 61.88%
+
+Feature importances:
+Feature         Frequency 
+V3              66.68     
+V7              57.19     
+V9              56.43     
+V4              55.63     
+V6              52.71     
+V10             50.17     
+V5              49.4      
+V2              48.08     
+V1              46.48     
+V8              46.39     
+V11             44.37     
+
+############ nt=75 f=5  ############
+Training time: 9.56s
+Accuracy: 65.31%
+
+Feature importances:
+Feature         Frequency 
+V7              44.87     
+V2              43.67     
+V8              43.39     
+V5              43.24     
+V3              42.15     
+V1              40.53     
+V4              39.48     
+V6              34.61     
+V10             34.4      
+V9              32.49     
+V11             21.51     
+
+############ nt=75 f=8  ############
+Training time: 14.43s
+Accuracy: 65.94%
+
+Feature importances:
+Feature         Frequency 
+V7              37.12     
+V3              36.31     
+V2              35.16     
+V4              34.25     
+V5              33.48     
+V1              33.47     
+V10             32.45     
+V9              32.37     
+V6              28.91     
+V8              27.76     
+V11             24.91     
+
+############ nt=75 f=random  ############
+Training time: 10.28s
+Accuracy: 67.50%
+
+Feature importances:
+Feature         Frequency 
+V7              44.09     
+V8              39.33     
+V3              38.91     
+V9              38.63     
+V2              32.79     
+V5              30.03     
+V10             27.07     
+V4              26.39     
+V6              26.17     
+V1              22.45     
+V11             20.64     
+
+############ nt=100 f=2  ############
+Training time: 3.60s
+Accuracy: 63.44%
+
+Feature importances:
+Feature         Frequency 
+V2              77.27     
+V3              68.35     
+V7              67.2      
+V5              64.48     
+V9              58.21     
+V8              57.36     
+V4              47.66     
+V6              41.04     
+V11             39.07     
+V10             35.98     
+V1              29.15     
+
+############ nt=100 f=5  ############
+Training time: 11.30s
+Accuracy: 66.88%
+
+Feature importances:
+Feature         Frequency 
+V1              49.7      
+V2              48.77     
+V10             44.29     
+V9              43.97     
+V8              41.92     
+V5              37.72     
+V3              34.63     
+V4              34.26     
+V6              33.13     
+V11             26.23     
+V7              24.9      
+
+############ nt=100 f=8  ############
+Training time: 18.95s
+Accuracy: 65.31%
+
+Feature importances:
+Feature         Frequency 
+V2              40.27     
+V8              36.95     
+V4              34.73     
+V9              32.75     
+V5              32.15     
+V3              32.08     
+V7              32.06     
+V1              31.17     
+V10             27.51     
+V11             27.41     
+V6              27.11     
+
+############ nt=100 f=random  ############
+Training time: 11.96s
+Accuracy: 66.88%
+
+Feature importances:
+Feature         Frequency 
+V8              44.86     
+V2              43.31     
+V3              39.7      
+V6              37.81     
+V5              37.81     
+V7              36.47     
+V4              31.59     
+V10             31.4      
+V9              30.47     
+V1              29.57     
+V11             24.73     

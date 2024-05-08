@@ -104,7 +104,7 @@ def forest_interpreter(name: str, train_file: str, test_file: str, algorithm: st
     if algorithm == 'random-forest':
         fs = [1, 2, int(np.log2(n_features) + 1), int(np.sqrt(n_features))]
     elif algorithm == 'decision-forest':
-        fs = [int(n_features / 4), int(n_features / 2), int(3 * n_features / 4)]
+        fs = [int(n_features / 4), int(n_features / 2), int(3 * n_features / 4), 'random']
     else:
         raise NotImplementedError("Type random-forest or decision-forest")
 
@@ -191,6 +191,13 @@ FOREST INTERPRETERS:
     elif option == 11:
         forest_interpreter('wine', 'wine_train.csv', 'wine_test.csv', 'random-forest')
     elif option == 12:
+        forest_interpreter('segment', 'segment_train.csv', 'segment_test.csv', 'random-forest')
+    elif option == 13:
+        forest_interpreter('ecoli', 'ecoli_train.csv', 'ecoli_test.csv', 'decision-forest', n_jobs=1)
+        forest_interpreter('wine', 'wine_train.csv', 'wine_test.csv', 'decision-forest')
+        forest_interpreter('segment', 'segment_train.csv', 'segment_test.csv', 'decision-forest')
+        forest_interpreter('ecoli', 'ecoli_train.csv', 'ecoli_test.csv', 'random-forest', n_jobs=1)
+        forest_interpreter('wine', 'wine_train.csv', 'wine_test.csv', 'random-forest')
         forest_interpreter('segment', 'segment_train.csv', 'segment_test.csv', 'random-forest')
     else:
         print("Number not valid")

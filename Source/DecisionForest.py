@@ -93,7 +93,11 @@ class DecisionForest:
 
     def grow_tree(self, X, y):
         # Each tree uses a random subspace (selection) of features
-        subset_features = np.random.choice(X.shape[1], self.f, replace=False)
+        if self.f == 'random':
+            temp_f = np.random.randint(0, X.shape[1])
+            subset_features = np.random.choice(X.shape[1], temp_f, replace=False)
+        else:
+            subset_features = np.random.choice(X.shape[1], self.f, replace=False)
         tree = CART(max_depth=self.max_depth, features_subset=subset_features)
         tree.fit(X, y)
         return tree
