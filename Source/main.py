@@ -24,7 +24,7 @@ def process_dataset(name: str, train_file: str, test_file: str, algorithm: str, 
     """
     outfile = open(fr'../Data/output/{name}_{algorithm}_nt={nt}_f={f}_output.txt', 'w')
 
-    print(fr"Training, evaluating and saving the output to /Data/output/{name}_{algorithm}_nt={nt}_f={f}output.txt")
+    print(fr"Training, evaluating and saving the output to /Data/output/{name}_{algorithm}_nt={nt}_f={f}_output.txt")
     print('############', file=outfile)
     print(f'DATASET - {name.upper()} - {algorithm.upper()}', file=outfile)
     print('############', file=outfile)
@@ -68,7 +68,7 @@ def process_dataset(name: str, train_file: str, test_file: str, algorithm: str, 
 
     outfile.close()
 
-    outfile = open(fr'../Data/output/{name}_{algorithm}_nt={nt}_f={f}output.txt', 'r')
+    outfile = open(fr'../Data/output/{name}_{algorithm}_nt={nt}_f={f}_output.txt', 'r')
     print(outfile.read())
     outfile.close()
 
@@ -169,17 +169,29 @@ FOREST INTERPRETERS:
     option = int(input("Select option number: "))
 
     if option == 1:
-        process_dataset('ecoli', 'ecoli_train.csv', 'ecoli_test.csv', 'random-forest', n_jobs=1)
+        nt = int(input("Select NT: "))
+        f = int(input("Select f: "))
+        process_dataset('ecoli', 'ecoli_train.csv', 'ecoli_test.csv', 'random-forest', nt, f, n_jobs=1)
     elif option == 2:
-        process_dataset('ecoli', 'ecoli_train.csv', 'ecoli_test.csv', 'decision-forest', n_jobs=1)
+        nt = int(input("Select NT: "))
+        f = int(input("Select f: "))
+        process_dataset('ecoli', 'ecoli_train.csv', 'ecoli_test.csv', 'decision-forest', nt, f, n_jobs=1)
     elif option == 3:
-        process_dataset('wine', 'wine_train.csv', 'wine_test.csv', 'random-forest')
+        nt = int(input("Select NT: "))
+        f = int(input("Select f: "))
+        process_dataset('wine', 'wine_train.csv', 'wine_test.csv', 'random-forest', nt, f)
     elif option == 4:
-        process_dataset('wine', 'wine_train.csv', 'wine_test.csv', 'decision-forest')
+        nt = int(input("Select NT: "))
+        f = int(input("Select f: "))
+        process_dataset('wine', 'wine_train.csv', 'wine_test.csv', 'decision-forest', nt, f)
     elif option == 5:
-        process_dataset('segment', 'segment_train.csv', 'segment_test.csv', 'random-forest')
+        nt = int(input("Select NT: "))
+        f = int(input("Select f: "))
+        process_dataset('segment', 'segment_train.csv', 'segment_test.csv', 'random-forest', nt, f)
     elif option == 6:
-        process_dataset('segment', 'segment_train.csv', 'segment_test.csv', 'decision-forest')
+        nt = int(input("Select NT: "))
+        f = int(input("Select f: "))
+        process_dataset('segment', 'segment_train.csv', 'segment_test.csv', 'decision-forest', nt, f)
     elif option == 7:
         forest_interpreter('ecoli', 'ecoli_train.csv', 'ecoli_test.csv', 'decision-forest', n_jobs=1)
     elif option == 8:
